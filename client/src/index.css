@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-100 text-gray-800;
+}
+
+/* typography */
+h1 {
+  @apply text-3xl font-medium mb-2;
+}
+
+h3 {
+  @apply text-xl font-medium;
+}
+
+/* form - input group - form notifications */
+form {
+  @apply bg-white border py-12 px-14 rounded-lg overflow-hidden w-full;
+}
+
+.form-error {
+  @apply flex items-center justify-center space-x-2 translate-y-3 bg-blue-500 rounded-t-lg py-3 px-2 text-sm text-white font-bold;
+}
+
+.form-success {
+  @apply flex items-center justify-center space-x-2 translate-y-3 bg-green-500 rounded-t-lg py-3 px-2 text-sm text-white font-bold;
+}
+
+.form-info {
+  @apply text-gray-500 text-sm;
+}
+
+.form-info > a {
+  @apply text-blue-500 font-light pl-1;
+}
+
+.inputs-group {
+  @apply flex flex-col space-y-5 pb-5;
+}
+
+.input-group {
+  @apply flex flex-col;
+}
+
+.input-group > label {
+  @apply text-sm font-medium pb-1;
+}
+
+.input-group > input {
+  @apply border rounded-md py-2 px-4 w-full bg-inherit text-sm;
+}
+
+/* buttons */
+.btn {
+  @apply rounded-md text-sm font-semibold py-2 px-4;
+}
+
+.btn-primary {
+  @apply btn bg-blue-500 hover:bg-blue-600 text-white;
+}
+
+/* navigation */
+.navbar {
+  @apply bg-white py-4 px-6 flex items-center justify-between;
+}
+
+.active {
+  @apply bg-sky-100 text-sky-500 rounded-md overflow-hidden font-medium;
+}
+
+.inactive {
+  @apply text-gray-500 rounded-md overflow-hidden;
+}
+
+/* images */
+.avatar-small {
+  @apply h-8 w-8 rounded-full;
+}
+.avatar-small > img {
+  @apply h-8 w-8 rounded-full;
+}
+
+/* containers */
+.frame {
+  @apply w-full bg-white p-4 rounded-lg border border-sky-200 ;
+}
